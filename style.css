@@ -468,11 +468,11 @@ img[alt="user2"]{
 
 .menu-icon {
     display:none;
-    /* font-size: 28px;
+    font-size: 28px;
     color: white;
     cursor: pointer;
     margin-right: 30px;
-     */
+    
 }
 
 /* Responsive for small screens */
