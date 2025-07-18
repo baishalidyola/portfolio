@@ -477,9 +477,7 @@ img[alt="user2"]{
 
 /* Responsive for small screens */
 @media (max-width: 768px) {
-   .menu-icon{
-    display:none;
-   }
+   
     .right ul {
         position: absolute;
         top: 70px; 
