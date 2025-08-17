@@ -13,14 +13,16 @@
 
 <body>
     <!-- nav bar -->
+
     <nav>
+   
         <div class="left"> <b>Baishali</b></div>
          <div class="menu-icon" onclick="toggleMenu()">⋮</div> 
         <div class="right">
             <ul id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills" id="skillsNav">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -32,6 +34,7 @@
 
     <!-- home page -->
      <div class="container">
+      
     <div class="first_page" id="home">
         <div class="left_side">
             <div class="hi"> Hi, </div>
@@ -49,7 +52,6 @@
             <img src="https://freesvg.org/img/publicdomainq-girl_laptop.png" alt="user1"/>
                 </div>
         </div>
-
     <!-- about page -->
      <div class="about_section" id="about">
      <div class="Heading"> About</div>
@@ -69,46 +71,62 @@
      <!-- skills page -->
     
     <div class="skill_section" id="skills" >
-    <div class="Heading">Skills </div>
+    <div class="Heading">Skills <i class="fa-solid fa-circle-chevron-down"></i></div>
     <div class="box"></div>
     <div class="skills_container">
       <div class="skill_left">
-        <h2 class="text">Professional Skills</h2>
-        <p class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia velit necessitatibus recusandae.</p>
+        <!-- <h2 class="text">Professional Skills</h2>
+        <p class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia velit necessitatibus recusandae.</p> -->
         <div class="box1">
         <div class="bar">
           <div class="description">
             <div><i class="fa-brands fa-html5"></i> <b>HTML</b></div>
-            <div> 80%</div>
+            <div><b>80%</b> </div>
           </div>
           <div class="minibar"></div>
         </div>
         <div class="bar">
           <div class="description">
             <div><i class="fa-brands fa-css3-alt"></i> <b>CSS</b></div>
-            <div> 75%</div>
+            <div> <b>75%</b></div>
           </div>
           <div class="minibar1"></div>
         </div>
         <div class="bar">
           <div class="description">
             <div><i class="fa-brands fa-js"></i> <b>JAVASCRIPT</b></div>
-            <div> 60%</div>
+            <div><b>60%</b> </div>
           </div>
           <div class="minibar2"></div>
-        </div>
-        <div class="bar">
-          <div class="description">
-            <div><i class="fa-solid fa-paintbrush"></i> <b>UI-UX</b></div>
-            <div> 80%</div>
-          </div>
-          <div class="minibar3"></div>
         </div>
         </div>
       </div>
       <div class="skill_right">
-        <img src="skills.jpg" alt="user2">
-      </div> 
+         <div class="box1">
+        <div class="bar">
+          <div class="description">
+            <div><i class="fa-brands fa-figma"></i> <b>FIGMA</b></div>
+            <div><b>90%</b> </div>
+          </div>
+          <div class="minibar3"></div>
+        </div>
+        <div class="bar">
+          <div class="description">
+            <div><i class="fa-brands fa-css3-alt"></i> <b>ADOBE PHOTOSHOP</b></div>
+            <div><b>70%</b> </div>
+          </div>
+          <div class="minibar4"></div>
+        </div>
+        <div class="bar">
+          <div class="description">
+            <div><i class="fa-brands fa-js"></i> <b>ADOBE ILLUSTRATOR</b></div>
+            <div> <b>60%</b></div>
+          </div>
+          <div class="minibar5"></div>
+        </div>
+       
+      </div>
+    </div>
     </div>
     </div>
 
@@ -129,53 +147,54 @@
 
         </div>
      </div>
+     <br>
+     <br>
 
-     <!-- --contact page -->
-      <!-- Contact Section -->
+     
+      
+<!-- Contact Section -->
 <div class="contact_section" id="contact">
-  <div class="Heading">Contact</div>
-  <div class="box"></div>
-
-  <form class="contact_form">
-    <div class="input_group">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
-    </div>
-
-    <div class="input_group">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" required>
-    </div>
-
-    <div class="input_group">
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" placeholder="Enter your phone number" required>
-    </div>
-
-    <div class="input_group">
-      <label for="feedback">Feedback</label>
-      <textarea id="feedback" placeholder="Write your message..." required></textarea>
-    </div>
-
-    <button type="submit" class="send_btn">Send</button>
-  </form>
-</div>
-</div>
-<!-- footer -->
-<footer class="foot">
-    <div class="text1">Baishali</div>
-    <div class="logos">
-        <ul>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-x-twitter"></i></li>
+  
+  <div class="cont">
+    <div class="intro">Let's <span class="bold">Connect</span> There</div>
+    <br>
+    <hr>
+    <br>
+    <div class="contact-container">
+      <!-- Left: Navigation -->
+      <div class="navigation">
+        <span class="nav-heading"><b>Navigation</b></span>
+        <ul id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
+      </div>
+
+      <!-- Center: Contact Info -->
+      <div class="contactinfo">
+        <strong><b>Contact</b></strong>
+        <p>📞 +977-9840032669</p>
+        <p>✉️ baishalidyola@gmail.com</p>
+      </div>
+  <div class="logo">
+  <a href="https://linkedin.com" target="_blank" class="social-icon">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://github.com" target="_blank" class="social-icon">
+    <i class="fa-brands fa-github"></i>
+  </a>
+</div>
+
     </div>
-    <div class="description">
-        <p>© 2025 Baishali | All Rights Reserved </p> 
-    </div>
-  </footer>
-  <!-- contact button -->
+  </div>
+</div>
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+  <p>© 2025 Baishali Dyola. All Rights Reserved.</p>
+</footer>
   <script>
     
     document.getElementById('contactBtn').addEventListener('click', function() {
@@ -185,6 +204,57 @@
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
 }
+// Animate bars when Skills section scrolls into view
+const skillsSection = document.getElementById('skills');
+const bars = [
+  { selector: '.minibar', width: '80%' },
+  { selector: '.minibar1', width: '75%' },
+  { selector: '.minibar2', width: '60%' },
+  { selector: '.minibar3', width: '90%' },
+  { selector: '.minibar4', width: '70%' },
+  { selector: '.minibar5', width: '60%' },
+];
+
+// Check if element is in viewport
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom > 0;
+}
+
+// Animate bars
+function animateBars() {
+  bars.forEach(bar => {
+    const el = document.querySelector(bar.selector);
+    if (el) el.style.width = '0';
+  });
+  setTimeout(() => {
+    bars.forEach(bar => {
+      const el = document.querySelector(bar.selector);
+      if (el) el.style.width = bar.width;
+    });
+  }, 50);
+}
+
+// Animate whenever Skills section enters viewport
+window.addEventListener('scroll', () => {
+  if (isInViewport(skillsSection)) {
+    animateBars();
+  }
+});
+
+// Smooth scroll for ALL links pointing to #skills
+document.querySelectorAll('a[href="#skills"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();  // Prevent default jump
+    skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); // smooth scroll
+    animateBars();
+  });
+});
+
+
+
+
+
 
     
 </script>
