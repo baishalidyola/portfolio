@@ -161,28 +161,16 @@ nav ul li a:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #203297; /* blue circle */
-  color: white;              /* icon color */
+  background-color: #203297; 
+  color: white;             
   font-size: 22px;
   transition: 0.3s ease;
 }
 
 .logo ul li a:hover {
-  background-color: #abb8d0; /* lighter blue on hover */
-  color: black;             /* icon color changes on hover */
+    background-color: #0077b5; 
+  transform: scale(1.1);              
 }
-
-
-/* 
-.logo ul li a {
-    font-size: 28px; 
-    color: black;
-    transition: 0.3s ease;
-}
-
-.logo ul li a:hover {
-    color: #abb8d0;
-} */
 
 
 .right_side{
@@ -204,6 +192,40 @@ img[alt="user1"]{
 }
 
 /* -------------------------------------home page-------------------------------------- */
+
+/* -----------------------quote page------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.quote-section {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+ 
+}
+
+.quote-section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin: 0;
+  
+}
+
+.quote-section .highlight {
+  color: #203297; 
+}
+
+.quote-section i {
+  font-size: 35px;
+  color: #203297;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+
 
 
 
@@ -348,18 +370,28 @@ font-size: 30px;
   justify-content: space-between;
   margin-bottom: 16px;
 }
+
 .minibar,
 .minibar1,
 .minibar2,
 .minibar3,
 .minibar4,
-.minibar5 {
+.minibar5{
   height: 5px;
   border-radius: 3px;
+  /* background-color: rgb(162, 162, 244); */
   background-color: rgb(43, 41, 41);
-  width: 0;               
-  transition: width 2s ease-in-out; /* smooth slide */
+  /* background-color: #FFEAD8; */
 }
+
+.minibar { width: 80%; }
+.minibar1 { width: 75%; }
+.minibar2 { width: 60%; }
+.minibar3 { width: 90%; }
+.minibar4 { width: 70%; }
+.minibar5 { width: 60%; }
+
+
 
 .skill_right{
   width: 50%;
@@ -407,6 +439,7 @@ font-size: 30px;
 .contact_section {
   width: 100%;
   padding: 40px;
+  
 }
 
 
@@ -415,6 +448,8 @@ font-size: 30px;
   font-weight: 700;
   text-align: left;
   margin-bottom: 10px;
+  margin-left: 150px;
+  margin-right:150px;
 }
 
 .contact-container {
@@ -422,7 +457,9 @@ font-size: 30px;
   justify-content: space-between; 
   align-items: flex-start;            
   gap: 40px;
-  flex-wrap: wrap;                
+  flex-wrap: wrap;  
+  margin-left: 150px;
+  margin-right:150px;              
 }
 
 /* Navigation */
@@ -540,6 +577,56 @@ font-size: 30px;
   .logo {
     justify-content: flex-start;
   }
+}
+
+/* -----------------------------contact cards------------------------------------- */
+.connect_section {
+  background-color: #1E2A97;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.connect_section h2 {
+  margin-bottom: 40px;
+}
+
+.connect_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.connect_card {
+  background-color: #f5eaff;
+  color: #1E2A97;
+  padding: 25px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.connect_card i {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.connect_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+.connect_card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.connect_card p {
+  font-size: 16px;
+  color: #333;
 }
 
 

@@ -22,7 +22,7 @@
             <ul id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills" id="skillsNav">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -52,6 +52,17 @@
             <img src="https://freesvg.org/img/publicdomainq-girl_laptop.png" alt="user1"/>
                 </div>
         </div>
+   <!---------------------- quote-------------------------- -->
+<div class="quote-section">
+  <p>
+    <span class="highlight">" GREAT DESIGNS,</span>
+       <i class="fa-solid fa-paper-plane"></i>
+    <br>
+    <span class="highlight">REQUIRES GREAT EMPATHY "</span>
+  </p>
+</div>
+
+
     <!-- about page -->
      <div class="about_section" id="about">
      <div class="Heading"> About</div>
@@ -150,8 +161,40 @@
      <br>
      <br>
 
+     </div>
+
+     <!-------------------------------------- how to connect -->
      
-      
+<!-- How to Connect Section -->
+<div class="connect_section" id="connect">
+  <h2>HOW TO CONNECT ?</h2>
+  <div class="connect_container">
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/yourusername" target="_blank" class="connect_card">
+      <i class="fa-brands fa-linkedin"></i>
+      <h3>Let’s Connect on LinkedIn</h3>
+      <p>Let’s talk design, creativity, and opportunities!</p>
+    </a>
+
+    <!-- Mail -->
+    <a href="mailto:baishalidyola@gmail.com" class="connect_card">
+      <i class="fa-regular fa-envelope"></i>
+      <h3>Drop me a Mail</h3>
+      <p>Got a project, idea, or just want to chat? Let’s talk!</p>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+9779840032669" class="connect_card">
+      <i class="fa-solid fa-phone"></i>
+      <h3>Let’s Talk</h3>
+      <p>Have a project or an idea? Give me a call!</p>
+    </a>
+
+  </div>
+</div>
+
+       
 <!-- Contact Section -->
 <div class="contact_section" id="contact">
   
@@ -190,7 +233,7 @@
     </div>
   </div>
 </div>
-</div>
+
 <!-- Footer Section -->
 <footer class="footer">
   <p>© 2025 Baishali Dyola. All Rights Reserved.</p>
@@ -204,57 +247,6 @@
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
 }
-// Animate bars when Skills section scrolls into view
-const skillsSection = document.getElementById('skills');
-const bars = [
-  { selector: '.minibar', width: '80%' },
-  { selector: '.minibar1', width: '75%' },
-  { selector: '.minibar2', width: '60%' },
-  { selector: '.minibar3', width: '90%' },
-  { selector: '.minibar4', width: '70%' },
-  { selector: '.minibar5', width: '60%' },
-];
-
-// Check if element is in viewport
-function isInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return rect.top < window.innerHeight && rect.bottom > 0;
-}
-
-// Animate bars
-function animateBars() {
-  bars.forEach(bar => {
-    const el = document.querySelector(bar.selector);
-    if (el) el.style.width = '0';
-  });
-  setTimeout(() => {
-    bars.forEach(bar => {
-      const el = document.querySelector(bar.selector);
-      if (el) el.style.width = bar.width;
-    });
-  }, 50);
-}
-
-// Animate whenever Skills section enters viewport
-window.addEventListener('scroll', () => {
-  if (isInViewport(skillsSection)) {
-    animateBars();
-  }
-});
-
-// Smooth scroll for ALL links pointing to #skills
-document.querySelectorAll('a[href="#skills"]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();  // Prevent default jump
-    skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); // smooth scroll
-    animateBars();
-  });
-});
-
-
-
-
-
 
     
 </script>
